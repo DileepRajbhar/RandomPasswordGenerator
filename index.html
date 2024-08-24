@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="box">
+            <h1>Password Generator</h1>
+            <p id="pass-box" aria-live="polite">Testing</p>
+            
+            <div class="row">
+                <label for="total-char" class="left">Password Length</label>
+                <div class="right">
+                    <input type="number" id="total-char" max="30" min="2" value="10" aria-describedby="length-desc">
+                    <span id="length-desc">Select the length of the password (2 to 30 characters).</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="upper-case" class="left">Contains Uppercase</label>
+                <div class="right">
+                    <input type="checkbox" id="upper-case" checked>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lower-case" class="left">Contains Lowercase</label>
+                <div class="right">
+                    <input type="checkbox" id="lower-case">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="numbers" class="left">Contains Numbers</label>
+                <div class="right">
+                    <input type="checkbox" id="numbers">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="symbols" class="left">Contains Symbols</label>
+                <div class="right">
+                    <input type="checkbox" id="symbols">
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="btn" aria-label="Generate Password">Generate</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
